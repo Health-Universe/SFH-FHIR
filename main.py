@@ -19,7 +19,7 @@ show_pages(
 
 sign_in_options = [
     #{'workspace_id': os.environ.get('MELDRX_WORKSPACE_ID'), 'name': 'MeldRx', 'search_requirements': None},
-    {'workspace_id': os.environ.get('SMART_WORKSPACE_ID'), 'name': 'SmartHealth IT', 'search_requirements': None},
+    {'workspace_id': os.environ.get('SMARTWORKSPACEID'), 'name': 'SmartHealth IT', 'search_requirements': None},
     #{'workspace_id': os.environ.get('EPIC_WORKSPACE_ID'), 'name': 'Epic', 'search_requirements': ['given', 'family', 'birthDate']},
 ]
 
@@ -27,8 +27,8 @@ AUTHORIZE_URL = 'https://app.meldrx.com/connect/authorize'
 TOKEN_URL = 'https://app.meldrx.com/connect/token'
 REFRESH_TOKEN_URL = 'https://app.meldrx.com/connect/token'
 REVOKE_TOKEN_URL = 'https://app.meldrx.com/connect/revocation'
-CLIENT_ID = os.environ.get('CLIENT_ID')
-CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
+CLIENT_ID = os.environ.get('CLIENTID')
+CLIENT_SECRET = os.environ.get('CLIENTSECRET')
 SCOPE = 'openid profile patient/*.read'
 
 
