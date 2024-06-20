@@ -3,3 +3,7 @@ streamlit-oauth==0.1.8
 st-pages ==0.4.5
 meldrx-fhir-client==0.0.8
 openai
+llama-index
+llama-index-llms-openai
+nltk
+pypdf
