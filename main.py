@@ -18,9 +18,7 @@ show_pages(
 )
 
 sign_in_options = [
-    #{'workspace_id': os.environ.get('MELDRX_WORKSPACE_ID'), 'name': 'MeldRx', 'search_requirements': None},
     {'workspace_id': os.environ.get('SMARTWORKSPACEID'), 'name': 'SmartHealth IT', 'search_requirements': None},
-    #{'workspace_id': os.environ.get('EPIC_WORKSPACE_ID'), 'name': 'Epic', 'search_requirements': ['given', 'family', 'birthDate']},
 ]
 
 AUTHORIZE_URL = 'https://app.meldrx.com/connect/authorize'
@@ -37,7 +35,7 @@ for option in sign_in_options:
     workspace_id = option['workspace_id']
     result = oauth2.authorize_button(
         name=option['name'],
-        redirect_uri=f'{os.environ.get("APP_URL")}/component/streamlit_oauth.authorize_button',
+        redirect_uri=f'{os.environ.get("APPURL")}/component/streamlit_oauth.authorize_button',
         scope=SCOPE,
         extras_params={'aud': f'https://app.meldrx.com/api/fhir/{workspace_id}'},
         pkce='S256'
