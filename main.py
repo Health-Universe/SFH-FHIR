@@ -18,9 +18,9 @@ show_pages(
 )
 
 sign_in_options = [
-    {'workspace_id': os.environ.get('MELDRX_WORKSPACE_ID'), 'name': 'MeldRx', 'search_requirements': None},
+    #{'workspace_id': os.environ.get('MELDRX_WORKSPACE_ID'), 'name': 'MeldRx', 'search_requirements': None},
     {'workspace_id': os.environ.get('SMART_WORKSPACE_ID'), 'name': 'SmartHealth IT', 'search_requirements': None},
-    {'workspace_id': os.environ.get('EPIC_WORKSPACE_ID'), 'name': 'Epic', 'search_requirements': ['given', 'family', 'birthDate']},
+    #{'workspace_id': os.environ.get('EPIC_WORKSPACE_ID'), 'name': 'Epic', 'search_requirements': ['given', 'family', 'birthDate']},
 ]
 
 AUTHORIZE_URL = 'https://app.meldrx.com/connect/authorize'
